@@ -1,0 +1,4 @@
+15 0 * * * root rpm-ostree update
+
+#5 0 * * * yourusername  distrobox upgrade --all
+#10 0 * * * yourusername  flatpak update -y

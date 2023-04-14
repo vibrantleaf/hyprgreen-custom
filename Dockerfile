@@ -7,6 +7,8 @@ FROM ghcr.io/vibrantleaf/hyprgreen:latest
 
 COPY --from=builder /usr/local/share/fonts/ /usr/local/share/fonts/ 
 
+COPY ./crontab /etc/crontab
+
 COPY ./builder.sh /tmp/builder.sh
 RUN bash /tmp/builder.sh
 
